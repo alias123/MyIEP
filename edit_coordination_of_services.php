@@ -364,32 +364,32 @@ if(isset($_POST['edit_coordination_of_services'])) {
                           </td>
                         </tr>
                         <tr>
-                            <td bgcolor="#E0E2F2" class="row_default">Services:</td><td bgcolor="#E0E2F2" class="row_default">
+                            <td bgcolor="#FFFFFF" class="row_default">Services:</td><td bgcolor="#FFFFFF" class="row_default">
                             <input type="text" tabindex="1" name="agency" size="30" maxsize="255" value="<?php echo $coord_row['agency']; ?>" onkeypress="return autocomplete(this,event,popuplist)"> &nbsp;<img src="<?php echo IPP_PATH . "images/choosericon.png"; ?>" height="17" width="17" border=0 onClick="popUpChooser(this,document.all.agency)" >
                             </td>
-                            <td valign="center" align="center" bgcolor="#E0E2F2" rowspan="5" class="row_default"><input type="submit" tabindex="6" name="Update" value="Update"></td>
+                            <td valign="center" align="center" bgcolor="#FFFFFF" rowspan="5" class="row_default"><input type="submit" tabindex="6" name="Update" value="Update"></td>
                         </tr>
                         <tr>
-                           <td bgcolor="#E0E2F2" class="row_default">Date: (YYYY-MM-DD)</td>
-                           <td bgcolor="#E0E2F2" class="row_default">
+                           <td bgcolor="#FFFFFF" class="row_default">Date: (YYYY-MM-DD)</td>
+                           <td bgcolor="#FFFFFF" class="row_default">
                                <input type="text" tabindex="2" name="date" value="<?php echo $coord_row['date']; ?>">&nbsp;<img src="<?php echo IPP_PATH . "images/calendaricon.gif"; ?>" height="17" width="17" border=0 onClick="popUpCalendar(this, document.all.date, 'yyyy-m-dd', 0, 0)">
                            </td>
                         </tr>
                         <tr>
-                           <td bgcolor="#E0E2F2" class="row_default">Optional File Upload:<BR>(.doc,.pdf,.txt,.rtf)</td>
-                           <td bgcolor="#E0E2F2" class="row_default">
+                           <td bgcolor="#FFFFFF" class="row_default">Optional File Upload:<BR>(.doc,.pdf,.txt,.rtf)</td>
+                           <td bgcolor="#FFFFFF" class="row_default">
                                <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
                                <input type="file" tabindex="3" name="supporting_file" value="<?php echo $_FILES['supporting_file']['name'] ?>">
                            </td>
                         </tr>
                         <tr>
-                           <td bgcolor="#E0E2F2" class="row_default">Report in File:</td>
-                           <td bgcolor="#E0E2F2" class="row_default">
+                           <td bgcolor="#FFFFFF" class="row_default">Report in File:</td>
+                           <td bgcolor="#FFFFFF" class="row_default">
                                <input type="checkbox" tabindex="4"  name="report_in_file" <?php if($coord_row['report_in_file']=='Y') echo "checked";?>>
                            </td>
                         </tr>
                         <tr>
-                           <td valign="center" bgcolor="#E0E2F2" class="row_default">Description:</td><td bgcolor="#E0E2F2" class="row_default"><textarea spellcheck="true" name="description" tabindex="5" cols="30" rows="5" wrap="soft"><?php echo $coord_row['description']; ?></textarea></td>
+                           <td valign="center" bgcolor="#FFFFFF" class="row_default">Description:</td><td bgcolor="#FFFFFF" class="row_default"><textarea spellcheck="true" name="description" tabindex="5" cols="30" rows="5" wrap="soft"><?php echo $coord_row['description']; ?></textarea></td>
                         </tr>
                         </table>
                         </form>
