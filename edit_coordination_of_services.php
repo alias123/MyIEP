@@ -328,7 +328,9 @@ if(isset($_POST['edit_coordination_of_services'])) {
        //output the javascript array for the chooser popup
        echoJSServicesArray();
     ?>
-    <?php print_bootstrap_head(); ?>
+    <?php print_bootstrap_head();
+        print_datepicker_depends();
+    ?>
 </HEAD>
     <BODY>
     <?php print_student_navbar($student_id, $student_row['first_name'] . " &nbsp" . $student_row['last_name']); ?>
