@@ -373,8 +373,14 @@ if(!$coord_result) {
        //output the javascript array for the chooser popup
        echoJSServicesArray();
     ?>
+     <?php print_bootstrap_head(); ?>
 </HEAD>
     <BODY>
+    <?php print_student_navbar($student_id, $student_row['first_name'] . " " . $student_row['last_name']); ?>    
+
+    <?php print_jumbotron_with_page_name("Achievement Level", $student_row['first_name'] . " " . $student_row['last_name'], $our_permission); ?>
+
+       
         <table class="shadow" border="0" cellspacing="0" cellpadding="0" align="center">  
         <tr>
           <td class="shadow-topLeft"></td>
@@ -511,6 +517,6 @@ if(!$coord_result) {
             <td class="shadow-bottomRight"></td>
         </tr>
         </table> 
-        <center></center>
+        <center> <?php print_bootstrap_js(); ?></center>
     </BODY>
 </HTML>
